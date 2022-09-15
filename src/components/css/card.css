@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+$radius:0.2rem;
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.card{
+    
+    max-width: fit-content;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    box-shadow: 0 2px 20px #e1e5ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 200ms ease-in;
+    cursor: pointer;
+
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.image{
+    height: 20rem;
+     width:100%;
+}
+.wrapper{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(14rem,21rem));
+    gap: 2rem;
+}
+.card__title{
+    padding: 1rem;
+}
+.card__btn{
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    border: 2px solid #d50000;
+    background-color: transparent;
+    color: #d50000;
+    border-radius: 0.2rem;
+}
+.card__btn:hover{
+    background: #d50000;
+    color: white;
+}
